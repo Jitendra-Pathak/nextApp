@@ -1,0 +1,15 @@
+$primary-color: #11a3de;
+$p-2: #1f2633;
+$p-3: #8c757d;
+$p-4: #1de47f;
+$p-5: #6c757d;
+$p-6: #ebebeb;
+$p-7: #dddddd;
+
+$g-1: linear-gradient(to right, #11a3de 0%,#1de47f 100%);
+$g-2: linear-gradient(to right, #1de47f 0%,#11a3de 100%);
+
+
+:export {
+  primaryColor: $primary-color;
+}

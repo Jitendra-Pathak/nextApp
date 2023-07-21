@@ -1,0 +1,17 @@
+@import '../../../styles/variables.module.scss';
+
+.footerContainer {
+    width: 100%;
+    background-color: $p-2;
+    // padding: 40px 0;
+
+    .content {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    
+
+
+}

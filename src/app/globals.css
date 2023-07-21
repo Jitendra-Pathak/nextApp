@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --blue: #11a3de;
+  --width: 1120px;
+  --p-5: #6c757d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +19,14 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+  :root {
+    --width: 100%;
+  }
+  
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +35,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.layoutWidth {
+  width: var(--width);
+}
+
+.secondaryColor {
+  color: var(--p-5);
+}
+
+.link {
+  color: var(--blue);
 }

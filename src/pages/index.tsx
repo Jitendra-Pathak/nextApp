@@ -6,6 +6,8 @@ import WhatWeDO from "@/app/components/homepage/whatWeDo";
 import WhyTecho from "@/app/components/homepage/whyTecho";
 import RootLayout from "@/app/layout";
 import Image from 'next/image';
+import '../app/style001.css';
+import '../app/globals.css';
 
 const imgSize = 22;
 

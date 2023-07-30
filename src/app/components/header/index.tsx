@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { useState } from 'react';
+import Menu from '../menu';
+import { ClickAwayCallback } from '../outsideClickHandler';
 import style from './header.module.scss';
 
 const imgSize = 20;
@@ -41,6 +44,18 @@ function StripHeader() {
 };
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const [menuCategory, setMenuCategory] = useState('');
+
+  const showMenuHandler = (category: string) => {
+    setShowMenu(true);
+    setMenuCategory(category);
+  };
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className={style.headerContainer}>
 
@@ -57,15 +72,15 @@ export default function Header() {
             priority
           />
 
-          <div className={''}>
+          <div className={'relative'}>
             <ul className={`flex text-sm gap-x-5 max-[640px]:hidden`}>
-              <li className={`cursor-pointer`}>Home</li>
-              <li className={`cursor-pointer`}>Solutions</li>
-              <li className={`cursor-pointer`}>Industries</li>
+              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Home")}>Home</li>
+              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Solutions")}>Solutions</li>
+              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Industries")}>Industries</li>
               <li className={`cursor-pointer`}>Discover us</li>
               <li className={`cursor-pointer`}>Blog</li>
             </ul>
-          </div>
+          </div>          
 
           <div className={`${style.rightMenu} flex items-center`}>
 
@@ -90,6 +105,13 @@ export default function Header() {
 
 
           </div>
+
+          <ClickAwayCallback as='div' closeIt={closeMenu}>
+            <>
+              {showMenu ? <Menu category={menuCategory} /> : ''}
+            </>
+          </ClickAwayCallback>
+        
         </div>
       </div>
     </div>

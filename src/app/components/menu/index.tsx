@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import { menuData } from './constant';
 import style from './index.module.scss';
 
@@ -16,7 +16,7 @@ export default function Menu(props: any) {
         return subMenu.map((options: any, index: any)=>{
             return (
                 <li className='text-lg pb-2' key={`${subMenu.label}_${index}`}>
-                    <Link href={options.link}>{options.label}</Link>
+                    <Link className={style.link} href={options.link}>{options.label}</Link>
                 </li>
             )
         });

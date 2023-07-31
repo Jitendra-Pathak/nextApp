@@ -3,7 +3,7 @@ import style from './index.module.scss';
 
 export default function Stats() {
     return (
-        <div className={`${style.stats} bg-white absolute bottom-[-75px] max-[640px]:relative max-[640px]:bottom-0`}>
+        <div className={`${style.stats} bg-white rounded-xl absolute bottom-[-75px] max-[640px]:relative max-[640px]:bottom-0`}>
             <div className={`layoutWidth m-auto flex ${style.wrapper} p-6 rounded-xl justify-evenly max-[64px]:flex-wrap max-[640px]:text-center`}>
 
                 <div>

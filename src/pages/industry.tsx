@@ -99,7 +99,7 @@ Repair any issue that may result in the degradation of your mobile application p
     <div className="row connect-section mx-0">
 		<div className="col-md-12 col-sm-12 col-xs-12"> 
 			<h2> Connect to discuss your project </h2> 
-			<a href="free-pilot-test.php">request free consultation</a>
+			<a href="free-pilot-test.php" className='themeBtn'>request free consultation</a>
 		</div> 
 	</div>
 

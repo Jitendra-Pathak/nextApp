@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Menu from '../menu';
 import { ClickAwayCallback } from '../outsideClickHandler';
 import style from './header.module.scss';
+import Link from 'next/link';
 
 const imgSize = 20;
 const contactNumber = '+91 9582151365';
@@ -11,7 +12,9 @@ function StripHeader() {
   return (
     <div className={style.infoHeader}>
       <div className={`layoutWidth ${style.content}`}>
-        <span className='text-sm' ><a href="mailto:info@techoninja.com"> Email us</a></span>
+        <span className='text-sm' >
+          <a className='text-white noUnderline' href="mailto:info@techoninja.com"> Email us</a>
+        </span>
         <div className={`flex gap-x-1`}>
           <Image
             src="/images/twitter.png"
@@ -74,11 +77,20 @@ export default function Header() {
 
           <div className={'relative'}>
             <ul className={`flex text-sm gap-x-5 max-[640px]:hidden`}>
-              <li className={`cursor-pointer`}>Home</li>
-              <li className={`cursor-pointer flex items-center`} onClick={()=> showMenuHandler("Solutions")}>Solutions 
-              <img style={{maxHeight:'15px'}} src="/images/down-arrow.png"/></li>
-              <li className={`cursor-pointer`}>Industries</li>
-              <li className={`cursor-pointer`}onClick={()=> showMenuHandler("DiscoverUs")}>Discover us</li>
+              <li className={`cursor-pointer`}>
+                <Link className={style.headerLink} href='/'>Home</Link>
+              </li>
+              <li className={`cursor-pointer flex items-center`} onClick={()=> showMenuHandler("Solutions")}>
+                <span>Solutions</span> 
+                <img style={{maxHeight:'15px'}} src="/images/down-arrow.png" />
+              </li>
+              <li className={`cursor-pointer`}>
+                <Link className={style.headerLink} href='/industry'>Industries</Link>
+              </li>
+              <li className={`cursor-pointer flex items-center`}onClick={()=> showMenuHandler("DiscoverUs")}>
+                <span>Discover us</span> 
+                <img style={{maxHeight:'15px'}} src="/images/down-arrow.png" />
+              </li>
               <li className={`cursor-pointer`}>Blog</li>
             </ul>
           </div>          
@@ -101,7 +113,7 @@ export default function Header() {
 
             </div>
             <div className={`${style.btnContainer} pl-4`}>
-              <button className={`${style.freePilotBtn} text-sm font-bold`}>Free pilot test</button>
+              <button className={`${style.freePilotBtn} text-sm font-bold themeBtn`}>Free pilot test</button>
             </div>
 
 

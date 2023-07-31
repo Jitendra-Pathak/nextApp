@@ -1,11 +1,12 @@
+import Link from 'next/link';
 import style from './index.module.scss';
 
 export default function WhatWeDO() {
     return (
         <div className={`${style.services} bg-[#11a3de]`}>
             <div className={`layoutWidth m-auto pt-16 pb-28 text-white max-[640px]:text-center`}>
-                <h2 className='text-lg font-bold pb-2'>What We Do</h2>
-                <h1 className='text-2xl pb-8'>
+                <h2 className='text-lg font-bold pb-2 text-white'>What We Do</h2>
+                <h1 className='text-2xl pb-8 text-white'>
                     <span className=''>Highlights that help you </span>
                     <span className='font-bold'>construct better</span>
                 </h1>
@@ -23,7 +24,9 @@ export default function WhatWeDO() {
                                 <br />
                                 <br />
                             </p>
-                            <button className='bg-white rounded px-4 py-2 font-bold link'>Read more</button>
+                            <button className='bg-white rounded px-4 py-2 font-bold link zoomBtn blueLinkBtn'>
+                                <Link href='/mobileTesting'>Read more</Link>
+                            </button>
                         </div>
 
                     </div>
@@ -36,7 +39,9 @@ export default function WhatWeDO() {
                                 functionality and user experience to guarantee a successful product for 
                                 you in all terms.
                             </p>
-                            <button className={`rounded px-4 py-2 font-bold text-white ${style.shadebtn}`}>Read more</button>
+                            <button className={`rounded px-4 py-2 font-bold text-white themeBtn ${style.shadebtn}`}>
+                                <Link href='/webAppTesting' className='text-white'>Read more</Link>
+                            </button>
                         </div>
 
                     </div>
@@ -45,7 +50,9 @@ export default function WhatWeDO() {
                         <div className='pt-6'>
                             <h4 className='pb-2 text-lg text-white font-bold'>Ecommerce Testing</h4>
                             <p className="text-white text-sm pb-6">Leveraging our testing skills and expertise of testing e-commerce sites built using a wide range of platforms Magento,Shopify, we test your e-commerce apps extensively covering all use cases and scenarios.</p>
-                            <button className='bg-white rounded px-4 py-2 font-bold link'>Read more</button>
+                            <button className='bg-white rounded px-4 py-2 font-bold link zoomBtn blueLinkBtn'>
+                                <Link href='/ecommerceTesting'>Read more</Link>
+                            </button>
                         </div>
                     </div>
                 </div>

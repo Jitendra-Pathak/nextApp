@@ -4,22 +4,23 @@
     top: 100px;
     left: 50%;
     z-index: 1;
+}
 
-    .title {
-        color: #fff;
+.title {
+    color: #fff;
+}
 
-        &::after {
-            content: ' ';
-            width: 33%;
-            border-bottom: 4px solid $primary-color;
-            display: block;
-            padding-top: 10px;
-        }
-    }
+.title::after {
+    content: ' ';
+    width: 33%;
+    border-bottom: 4px solid $primary-color;
+    display: block;
+    padding-top: 10px;
+}
 
-    li:hover {
-        color: $primary-color;
-    }
+.link:hover {
+    color: $primary-color;
+    text-decoration: none;
 }
 
 .content {

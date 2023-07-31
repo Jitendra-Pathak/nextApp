@@ -21,7 +21,7 @@ export default function Home() {
 
                 <div className={`bg-white py-12`}>
                     <div className={`layoutWidth m-auto max-[640px]:p-4`}>
-                        <p className="uppercase font-bold text-xl pb-2">Techo Ninja: The company that understands your needs!</p>
+                        <p style={{color:'rgb(var(--foreground-rgb))'}} className="uppercase font-bold text-xl pb-2">Techo Ninja: The company that understands your needs!</p>
                         <p className='text-md secondaryColor text-lg'>we leverage our deep technology and industry-specific understanding
                             to facilitate cuttong edge testing services which ensure end-to-end
                             validation of the data, services, applications or software being tested

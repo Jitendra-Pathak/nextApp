@@ -10,7 +10,7 @@ export default function Feedback() {
             <div className={`layoutWidth m-auto relative`}>
                 <div className='flex max-[640px]:flex-col'>
                     <div className='w-1/2  pt-12 pb-32 max-[640px]:w-full max-[640px]:text-center max-[640px]:pb-12'>
-                        <h2 className='text-md font-bold link max-[640px]:text-lg'>Customer's Feedback</h2>
+                        <h2 className='text-md font-bold link1 max-[640px]:text-lg'>Customer's Feedback</h2>
                         <h1 className='text-3xl pt-6 pb-10'>
                             <b className='font-bold'>The Trust </b>
                             <span>From Clients</span>
@@ -52,7 +52,7 @@ export default function Feedback() {
                                 priority
                             />
                         </div>
-                        <h1 className='font-bold text-2xl text-center py-10'>Vinod Ahuja</h1>
+                        <h1 className='font-bold text-2xl text-center py-10'>Himanshu Dua</h1>
 
                     </div>
                 </div>

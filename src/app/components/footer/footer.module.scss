@@ -2,9 +2,13 @@
 
 .footerContainer {
     width: 100%;
-    background-color: $p-2;
+    background-color: #191b1e;
     // padding: 40px 0;
+    display: flex;
 
+    .footer-img{
+        max-width: 100%;
+    }
     .content {
         margin: auto;
         display: flex;
@@ -23,6 +27,9 @@
         p {
             margin: 0;
             color: #fff;
+            font-size: 11px;
+            color: rgba(255, 255, 255, .8);
+            font-family: 'CustomFont-light', sans-serif;
         }
     }
 }

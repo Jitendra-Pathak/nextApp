@@ -11,7 +11,7 @@ function StripHeader() {
   return (
     <div className={style.infoHeader}>
       <div className={`layoutWidth ${style.content}`}>
-        <span className='text-sm'>Email us</span>
+        <span className='text-sm' ><a href="mailto:info@techoninja.com"> Email us</a></span>
         <div className={`flex gap-x-1`}>
           <Image
             src="/images/twitter.png"
@@ -74,10 +74,11 @@ export default function Header() {
 
           <div className={'relative'}>
             <ul className={`flex text-sm gap-x-5 max-[640px]:hidden`}>
-              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Home")}>Home</li>
-              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Solutions")}>Solutions</li>
-              <li className={`cursor-pointer`} onClick={()=> showMenuHandler("Industries")}>Industries</li>
-              <li className={`cursor-pointer`}>Discover us</li>
+              <li className={`cursor-pointer`}>Home</li>
+              <li className={`cursor-pointer flex items-center`} onClick={()=> showMenuHandler("Solutions")}>Solutions 
+              <img style={{maxHeight:'15px'}} src="/images/down-arrow.png"/></li>
+              <li className={`cursor-pointer`}>Industries</li>
+              <li className={`cursor-pointer`}onClick={()=> showMenuHandler("DiscoverUs")}>Discover us</li>
               <li className={`cursor-pointer`}>Blog</li>
             </ul>
           </div>          

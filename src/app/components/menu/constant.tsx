@@ -99,27 +99,27 @@ export const menuData:any = {
     ],
     'Solutions': [
         {
-            label: 'Solutions',
+            label: 'QA Services',
             data: [
                 {
                     label: 'Web App Testing',
-                    link: '/about'
+                    link: '/webAppTesting'
                 }, 
                 {
                     label: 'Mobile App Testing',
-                    link: '/about'
+                    link: '/mobileTesting'
                 }, 
                 {
                     label: 'Desktop Testing',
-                    link: '/about'
+                    link: '/desktopTesting'
                 }, 
                 {
                     label: 'Game Testing',
-                    link: '/about'
+                    link: '/gameTesting'
                 },
                 {
                     label: 'QA Consultancy',
-                    link: '/about'
+                    link: '/qaConsultancy'
                 },
             ],
         },
@@ -128,44 +128,40 @@ export const menuData:any = {
             data: [
                 {
                     label: 'Functional Testing',
-                    link: '/about'
+                    link: '/functionalTesting'
                 }, 
                 {
                     label: 'UX & UI Testing',
-                    link: '/about'
+                    link: '/uiuxTesting'
                 }, 
                 {
                     label: 'Localization Testing',
-                    link: '/about'
+                    link: '/localizationTesting'
                 }, 
                 {
                     label: 'E-Commerce Testing',
-                    link: '/about'
+                    link: '/ecommerceTesting'
                 },
                 {
-                    label: 'ERP Testing',
-                    link: '/about'
+                    label: 'Accessibility Testing',
+                    link: '/accessibilityTesting'
                 },
                 {
                     label: 'Compatibility Testing',
-                    link: '/about'
+                    link: '/compatibilityTesting'
                 },
                 {
                     label: 'System Testing',
-                    link: '/about'
+                    link: '/systemTesting'
                 },
                 {
                     label: 'Acceptance Testing',
-                    link: '/about'
+                    link: '/acceptanceTesting'
                 },
                 {
                     label: 'API Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'Web Services Testing',
-                    link: '/about'
-                },
+                    link: '/apiAutomationTesting'
+                }
             ],
         },
         {
@@ -173,85 +169,27 @@ export const menuData:any = {
             data: [
                 {
                     label: 'Website Automation',
-                    link: '/about'
+                    link: '/websiteAutomationTesting'
                 }, 
                 {
                     label: 'Mobile Apps Automation',
-                    link: '/about'
+                    link: '/mobileAppAutomation'
                 }, 
             ]
         }
     ],
-    'Industries': [
+    'DiscoverUs': [
         {
-            label: 'Industries',
             data: [
                 {
-                    label: 'Web App Testing',
+                    label: 'About Us',
                     link: '/about'
                 }, 
                 {
-                    label: 'Mobile App Testing',
-                    link: '/about'
-                }, 
-                {
-                    label: 'Desktop Testing',
-                    link: '/about'
-                }, 
-                {
-                    label: 'Game Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'QA Consultancy',
-                    link: '/about'
-                },
-            ],
-        },
-        {
-            label: 'Manual Testing',
-            data: [
-                {
-                    label: 'Functional Testing',
-                    link: '/about'
-                }, 
-                {
-                    label: 'UX & UI Testing',
-                    link: '/about'
-                }, 
-                {
-                    label: 'Localization Testing',
-                    link: '/about'
-                }, 
-                {
-                    label: 'E-Commerce Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'ERP Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'Compatibility Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'System Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'Acceptance Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'API Testing',
-                    link: '/about'
-                },
-                {
-                    label: 'Web Services Testing',
-                    link: '/about'
-                },
-            ],
-        },
+                    label: 'Our Approach',
+                    link: '/ourApproach'
+                }
+            ]
+        }
     ]
 }

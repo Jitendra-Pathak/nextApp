@@ -146,7 +146,7 @@ export default function Home() {
 		<div className="row connect-section mx-0">
 			<div className="col-md-12 col-sm-12 col-xs-12">
 				<h2> Connect to discuss your project </h2>
-				<a href="free-pilot-test.php">request free consultation</a>
+				<a href="/freePilotTest">request free consultation</a>
 			</div>
 		</div>
 	</div>

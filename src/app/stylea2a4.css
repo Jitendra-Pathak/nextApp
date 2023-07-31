@@ -5103,3 +5103,13 @@ ul.list-arrow li:before {
   text-align: center !important;
   margin-bottom: 1.5rem !important;
 }
+
+.verticalLineFooter {
+  width: 1px;
+  height: 240px;
+  background-color: #6c757d;
+  margin: 0 10px;
+  float:right;
+  margin-right: 50px;
+  margin-top: 22px;
+}

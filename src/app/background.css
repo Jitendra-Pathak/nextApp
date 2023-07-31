@@ -4463,7 +4463,9 @@ input[type=submit].btn-block {
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    line-height: 24px;
+    
 }
 
 .nav-link {

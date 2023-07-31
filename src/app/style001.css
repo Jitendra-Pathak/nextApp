@@ -3640,6 +3640,7 @@ ul.testing-type-option li:before{
   font-size: 16px;
   font-weight: bold;
   margin-left: 20px;
+  text-align: left;
 }
 
 .timeline-section ul li h3:after {
@@ -5017,4 +5018,26 @@ form {
     background: -webkit-linear-gradient(right, #1de47f 0%, #11a3de 100%);
   }
   
-  
+  .my-btn {
+    padding: 10px 30px;
+    background: -webkit-linear-gradient(right, #1de47f 0%, #11a3de 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .form-control-new {
+    display: block;
+    width: 50%;
+    height: calc(1em + .55rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #6c757d;
+    border-radius: .25rem;
+    margin-bottom: 20px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+  }

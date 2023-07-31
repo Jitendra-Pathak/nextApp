@@ -16,7 +16,7 @@ export function ClickAwayCallback (props: any) {
         window.addEventListener("mousedown", handleClickOutside);
 
         return () => {
-            window.removeEventListener("mousedown", handleClickOutside);
+            window.removeEventListener("mouseout", handleClickOutside);
         }
     }, []);
 
@@ -26,6 +26,15 @@ export function ClickAwayCallback (props: any) {
     return (
         <Component
             className={`closeOnOutsideClick ${className}`}
+            ref={ref}
+        >
+            {props.children}
+        </Component>
+    );
+
+    return (
+        <Component
+            className={`mouseout ${className}`}
             ref={ref}
         >
             {props.children}

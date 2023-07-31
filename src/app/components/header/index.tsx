@@ -4,6 +4,7 @@ import Menu from '../menu';
 import { ClickAwayCallback } from '../outsideClickHandler';
 import style from './header.module.scss';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const imgSize = 20;
 const contactNumber = '+91 9582151365';
@@ -61,6 +62,10 @@ export default function Header() {
 
   return (
     <div className={style.headerContainer}>
+      <Head>
+        <title>Techo Ninja | Leading Software Quality Engineering and Outsourcing Company in India</title>
+        <meta property="og:title" content="Techo Ninja | Leading Software Quality Engineering and Outsourcing Company in India" key="Techo Ninja | Leading Software Quality Engineering and Outsourcing Company in India" />
+      </Head>
 
       <StripHeader />
 

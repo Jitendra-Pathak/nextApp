@@ -10,9 +10,10 @@ export default function Home() {
 			<div className="banner-header">
                     <h2 className="h1">Acceptance Testing</h2>
 					<div className ="breadcrumb1">
-					<a href="index.html">
+					<a href="/">
 					<img src="/images/Homeicon.png" alt="home"/></a>
-						<img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/>
+					<span style={{fontFamily:'webdings', color:'#1d2625'}}>4</span>
+						{/* <img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/> */}
                         <span> Acceptance Testing</span>
 					</div>
 			</div>
@@ -98,7 +99,7 @@ export default function Home() {
 						<p>To make your website applications as user-friendly they can be. We design the acceptance test plan and conduct tests to confirm that the app is ready to use.</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-tick.png" alt="tick" />
+						<img src="/images/mapping.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -107,7 +108,7 @@ export default function Home() {
 						<p>User Acceptance applications are multi-tenant, due to which there is always a risk of data theft. Our solution is to offer our clients an audit trail to ensure the security of their stored data.</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-test-tube.png" alt="tick" />
+						<img src="/images/testing.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -116,7 +117,7 @@ export default function Home() {
 						<p>We work to make your application more stable to earn the trust of your users. We make sure that the software complies with user requirements and doesn't have any systematic anomalies.</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-edit.png" alt="tick" />
+						<img src="/images/output.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -125,7 +126,7 @@ export default function Home() {
 						<p>Before a system can be accepted, it is subject to acceptance criteria. An application is tested for compliance with safety, legal, and government standards in regulation acceptance testing.</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-winner.png" alt="tick" />
+						<img src="/images/error.png" alt="tick" />
 					</div>
 				 </li>
 			 </ul>
@@ -135,7 +136,7 @@ export default function Home() {
 	<div className="row connect-section mx-0">
 		<div className="col-md-12 col-sm-12 col-xs-12"> 
 			<h2> Connect to discuss your project </h2> 
-			<a href="free-pilot-test.php">request free consultation</a>
+			<a href="/freePilotTest" className='themeBtn'>request free consultation</a>
 		</div> 
 	</div>
 </div>

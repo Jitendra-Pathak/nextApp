@@ -17,7 +17,7 @@ function StripHeader() {
           <a className='text-white noUnderline' href="mailto:info@techoninja.com"> Email us</a>
         </span>
         <div className={`flex gap-x-1`}>
-          <Image
+          {/* <Image
             src="/images/twitter.png"
             alt="Twitter"
             className="dark:invert cursor-pointer"
@@ -32,7 +32,7 @@ function StripHeader() {
             width={imgSize}
             height={imgSize}
             priority
-          />
+          /> */}
           <Image
             src="/images/Linkedin.png"
             alt="LinkedIn"
@@ -71,6 +71,7 @@ export default function Header() {
 
       <div className={`bg-white ${style.primaryHeader} py-2`}>
         <div className={`layoutWidth ${style.content}`}>
+          <a href='/'>
           <Image
             src="/images/logo.png"
             alt="TecoNinja"
@@ -79,24 +80,25 @@ export default function Header() {
             height={55}
             priority
           />
+          </a>
 
-          <div className={'relative'}>
+          <div className={'relative  mt-2.5'}>
             <ul className={`flex text-sm gap-x-5 max-[640px]:hidden`}>
               <li className={`cursor-pointer`}>
                 <Link className={style.headerLink} href='/'>Home</Link>
               </li>
-              <li className={`cursor-pointer flex items-center`} onClick={()=> showMenuHandler("Solutions")}>
+              <li className={`cursor-pointer flex items-center headerLink`} onClick={()=> showMenuHandler("Solutions")}>
                 <span>Solutions</span> 
                 <img style={{maxHeight:'15px'}} src="/images/down-arrow.png" />
               </li>
               <li className={`cursor-pointer`}>
                 <Link className={style.headerLink} href='/industry'>Industries</Link>
               </li>
-              <li className={`cursor-pointer flex items-center`}onClick={()=> showMenuHandler("DiscoverUs")}>
+              <li className={`cursor-pointer flex items-center headerLink`}onClick={()=> showMenuHandler("DiscoverUs")}>
                 <span>Discover us</span> 
                 <img style={{maxHeight:'15px'}} src="/images/down-arrow.png" />
               </li>
-              <li className={`cursor-pointer`}>Blog</li>
+              {/* <li className={`cursor-pointer`}>Blog</li> */}
             </ul>
           </div>          
 
@@ -112,13 +114,14 @@ export default function Header() {
                 priority
               />
               <div className='flex flex-col'>
-                <span className='text-xs'>Hotline</span>
-                <span className='text-sm'>{contactNumber}</span>
+                <span className='text-xs headerLink'>Hotline</span>
+                <span className='text-sm headerLink'>{contactNumber}</span>
               </div>
 
             </div>
             <div className={`${style.btnContainer} pl-4`}>
-              <button className={`${style.freePilotBtn} text-sm font-bold themeBtn`}>Free pilot test</button>
+              <button className={`${style.freePilotBtn} text-sm font-bold themeBtn`}>
+                <Link className='text-white' href='/freePilotTest'>Free pilot test</Link></button>
             </div>
 
 

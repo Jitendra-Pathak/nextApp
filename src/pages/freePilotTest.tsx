@@ -2,7 +2,41 @@ import RootLayout from '@/app/layout'
 import '../app/style001.css';
 import '../app/background.css';
 
-export default function Home() {
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+const FreePilotTest: React.FC = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [mobile, setMobile] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // You can handle form submission logic here (e.g., sending the form data to a backend server)
+    try {
+      const serviceId = 'service_gvl69u9';
+      const templateId = 'template_tazx5ca';
+      const userId = 'WMcMriTvtEyizD9Os';
+
+      await emailjs.send(serviceId, templateId, {
+        from_name: name,
+        from_email: email,
+        mobile,
+        message,
+      }, userId);
+
+      alert('Email sent successfully!');
+      setName('');
+      setEmail('');
+      setMessage('');
+      setMobile('');
+    } catch (error) {
+      console.error(error);
+      alert('Failed to send email.');
+    }
+  };
+
   return (
     <RootLayout>
 		<div className="banner">
@@ -10,9 +44,10 @@ export default function Home() {
 		<div className="banner-header">
 			<h2 className="h1" style={{fontSize:'25px'}}>Free Pilot Testing Service</h2>
 			<div className="breadcrumb1">
-				<a href="index.html">
+				<a href="/">
 					<img src="/images/Homeicon.png" alt="home"/></a>
-				<img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/>
+          <span style={{fontFamily:'webdings', color:'#1d2625'}}>4</span>
+				{/* <img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/> */}
 				<span> Free Pilot Testing Service</span>
 			</div>
 		</div>
@@ -48,25 +83,26 @@ export default function Home() {
               <p><strong style= {{color:'#1f2633'}}>Team Size:</strong> 1 Test Engineer</p>
             </div>
 			    
-		        <form method="POST" action="#">
+		        <form onSubmit={handleSubmit}>
 	            <div className="contact-box">
-                <p className="label-cover mb-1">NAME<span className="text-danger px-1">*</span></p>
+                {/* <p className="label-cover mb-1">NAME<span className="text-danger px-1">*</span></p> */}
                 
                   <div className="form-group">
-                    <input type="text" name="fname" className="form-control-new rounded-0 input-cover" required/>
+                    <label className="m-0 label-cover">Name<span className="text-danger px-1">*</span></label>
+                    <input type="text" name="fname" className="form-control-new rounded-0 input-cover" value={name} onChange={(e) => setName(e.target.value)} required/>
                    </div>
                 
 	              <div className="form-group">
                   <label className="m-0 label-cover">email<span className="text-danger px-1">*</span></label>
-	                <input type="email" name="email" className="form-control-new rounded-0 input-cover" required/>
+	                <input type="email" name="email" className="form-control-new rounded-0 input-cover" value={email} onChange={(e) => setEmail(e.target.value)} required/>
 	              </div>
 	              <div className="form-group">
                   <label className="m-0 label-cover">Mobile<span className="text-danger px-1">*</span></label>
-	                <input type="text" name="phone" className="form-control-new rounded-0 input-cover" required/>
+	                <input type="text" name="phone" className="form-control-new rounded-0 input-cover" value={mobile} onChange={(e) => setMobile(e.target.value)} required/>
 	              </div>
 	              <div className="form-group">
                   <label className="m-0 label-cover">MESSAGE<span className="text-danger px-1">*</span></label>
-	                <textarea name="message" className="form-control-new rounded-0 input-cover textarea-box" required></textarea>
+	                <textarea name="message" className="form-control-new rounded-0 input-cover textarea-box" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
 	              </div>
 	              <div className="form-group">
                   <label className="m-0 label-cover">ATTACHMENT</label>
@@ -83,4 +119,5 @@ export default function Home() {
      </div>
       </RootLayout>
   )
-}
+};
+export default FreePilotTest;

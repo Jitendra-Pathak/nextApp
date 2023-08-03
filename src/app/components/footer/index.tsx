@@ -51,11 +51,12 @@ export default function Footer() {
 
                                 <div className="links--widget" style={{ fontSize: '12px' }}>
                                     <ul className="nav">
-                                        <li><Link className='text-white noUnderline' href="index.php">Home</Link></li>
-                                        <li><Link className='text-white noUnderline' href="about.php">About us</Link></li>
-                                        <li><Link className='text-white noUnderline' href="services.php">Our Services</Link></li>
-                                        <li><Link className='text-white noUnderline' href="team.php">Our Team</Link></li>
-                                        <li><Link className='text-white noUnderline' href="contact.php">Contact us</Link></li>
+                                        <li><Link className='text-white noUnderline' href="/">Home</Link></li>
+                                        <li><Link className='text-white noUnderline' href="/webAppTesting">Website Testing</Link></li>
+                                        <li><Link className='text-white noUnderline' href="/mobileTesting">Mobile App Testing</Link></li>
+                                        <li><Link className='text-white noUnderline' href="/about">About us</Link></li>
+                                        <li><Link className='text-white noUnderline' href="ourApproach">Our Approch</Link></li>
+                                        <li><Link className='text-white noUnderline' href="/contactUs">Contact us</Link></li>
 
                                     </ul>
                                 </div>
@@ -74,7 +75,7 @@ export default function Footer() {
                                         <p style={{ fontSize: '11px' }}>Subscribe to our newsletter and get latest testing tips directly in your inbox.</p>
                                     </div>
 
-                                    <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" data-form="validate">
+                                    <form action="#" method="post" name="mc-embedded-subscribe-form" target="_blank" data-form="validate">
                                         <input type="text" name="EMAIL" placeholder="Email" className="form-control" required />
 
                                         <button type="submit" className="btn btn-primary">Subscribe</button>

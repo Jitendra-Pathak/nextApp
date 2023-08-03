@@ -4966,7 +4966,7 @@ ul.menu-hover {
   }
   
   .right-side {
-    margin-top: 110px;
+    margin-top: 90px;
     flex: .8;
     padding: 20px;
   }
@@ -5011,7 +5011,7 @@ form {
     border-radius: 8px;
     cursor: pointer;
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   button[name="submitbtn"]:hover {
@@ -5040,4 +5040,8 @@ form {
     border-radius: .25rem;
     margin-bottom: 20px;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+  }
+
+  .roboto-font{
+    font-family: 'Roboto',Arial, sans-serif;
   }

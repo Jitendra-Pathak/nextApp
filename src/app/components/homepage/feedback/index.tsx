@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Stats from '../stats';
 import style from './index.module.scss';
+import CarouselComponent from '../carousal';
 
 const imgSize = 60;
 
@@ -16,19 +17,21 @@ export default function Feedback() {
                             <span>From Clients</span>
                         </h1>
                         <p className={`pr-36 text-md ${style.text} max-[640px]:p-4`}>
-                            Techo Ninja has been providing the best solutions to its customer since last 10 years.
+                            Techo Ninja has been providing the best solutions to its customer.
                             Here's what our customer says about us.
                         </p>
 
                     </div>
                     <div className={`w-1/2  pt-12 pb-32 pl-12 ${style.dark} max-[640px]:w-full max-[640px]:text-center max-[640px]:p-4 max-[640px]:pb-12 max-[640px]:pt-0`}>
-                        <div className='py-12'>
-                            <p className='text-md'>Whenever I need a testing or website designing solution for my </p>
+                    <CarouselComponent />
+                        {/* <div className='py-12'>
+                            <p className='text-md'>Whenever I need a Manual testing or Automatio Testing solution for my </p>
                             <p className='text-md'>business. Techo Ninja comes first in my mind.</p>
                         </div>
+                        
                         <div className='flex justify-evenly'>
                             <Image
-                                src="/images/hotlineicon.png"
+                                src="/images/client11.jpg"
                                 alt="Twitter"
                                 className="dark:invert cursor-pointer"
                                 width={imgSize}
@@ -36,7 +39,7 @@ export default function Feedback() {
                                 priority
                             />
                             <Image
-                                src="/images/hotlineicon.png"
+                                src="/images/client2.jpg"
                                 alt="Twitter"
                                 className="dark:invert cursor-pointer"
                                 width={imgSize}
@@ -44,7 +47,7 @@ export default function Feedback() {
                                 priority
                             />
                             <Image
-                                src="/images/hotlineicon.png"
+                                src="/images/client3.jpg"
                                 alt="Twitter"
                                 className="dark:invert cursor-pointer"
                                 width={imgSize}
@@ -52,8 +55,11 @@ export default function Feedback() {
                                 priority
                             />
                         </div>
-                        <h1 className='font-bold text-2xl text-center py-10'>Himanshu Dua</h1>
-
+                        <div className='flex justify-evenly'>
+                        <h1 className='font-bold text-2xl text-center py-10'>Anil Mehta</h1>
+                        <h1 className='font-bold text-2xl text-center py-10'>Vinod Ahuja</h1>
+                        <h1 className='font-bold text-2xl text-center py-10'>Maria Deo</h1>
+                        </div> */}
                     </div>
                 </div>
                 <Stats />

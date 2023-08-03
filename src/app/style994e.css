@@ -2137,21 +2137,6 @@ body .functional-testing .breadcrumb-sec {
   border-radius: 10px;
 }
 
-.functional-testing-contant h2 {
-  font-size: 36px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  color: #0083ca;
-}
-
-.functional-testing-contant h4 {
-  margin: 0 auto 40px;
-  color: #0083ca;
-  display: inline-block;
-  border-bottom: 2px dashed;
-  font-size: 22px;
-  padding-bottom: 5px;
-}
 
 .testing-services p {
   margin: 0px;
@@ -2163,11 +2148,6 @@ body .functional-testing .breadcrumb-sec {
 
 .hover-listing .li-cover p {
   font-size: 15px;
-}
-
-.hover-listing li:hover,
-.hover-listing li.active {
-  background: -webkit-linear-gradient(right, #2b6ab3 0%, #0083ca 100%);
 }
 
 .hover-listing .li-cover h3 {

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import style from './index.module.scss';
 
 export default function Banner() {
@@ -10,7 +11,9 @@ export default function Banner() {
                 <p className='secondaryColor text-1xl pb-20'>What makes us unique and better than others</p>
 
                <div className='flex'>
-               <button className='bg-black text-white rounded-lg px-3 py-2 font-bold mr-12'>Read More</button>
+               <button className='bg-black text-white rounded-lg px-3 py-2 font-bold mr-12 zoomBtn noUnderline'>
+               <Link className='noUnderline text-white' href='/ourApproach'>Read more</Link>
+               </button>
                </div>
             </div>
         </div>

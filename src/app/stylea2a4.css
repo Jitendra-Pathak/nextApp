@@ -23,7 +23,7 @@ body {
   line-height: 24px;
   overflow-x: hidden;
   background-color: #ffffff;
-  color: #6C757D;
+  /* color: #6C757D; */
 }
 
 .t-m-preeti * {
@@ -5112,4 +5112,13 @@ ul.list-arrow li:before {
   float:right;
   margin-right: 50px;
   margin-top: 22px;
+}
+
+.headerLink {
+  color: #212529;
+}
+
+.headerLink:hover {
+  text-decoration: none;
+  color: #212529;
 }

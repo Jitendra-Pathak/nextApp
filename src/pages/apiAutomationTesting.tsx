@@ -10,9 +10,10 @@ export default function Home() {
 		<div className="banner-header">
 			<h2 className="h1">API Testing</h2>
 			<div className="breadcrumb1">
-				<a href="index.html">
+				<a href="/">
 					<img src="/images/Homeicon.png" alt="home"/></a>
-				<img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/>
+					<span style={{fontFamily:'webdings', color:'#1d2625'}}>4</span>
+				{/* <img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/> */}
 				<span> API Testing</span>
 			</div>
 		</div>
@@ -28,7 +29,7 @@ export default function Home() {
 				<div className="row">
 					<div className="col-md-6 col-xs-12 testing-quality-option">
 						<div className="testing-quality-box red">
-							<img src="/images/managed-testing-icon.svg" alt="testing services icon"/>
+							<img className= 'ml-6' src="/images/managed-testing-icon.svg" alt="testing services icon"/>
 						</div>
 						
 						<h3>Optimise Testing Process</h3>
@@ -36,7 +37,7 @@ export default function Home() {
 					</div>
 					<div className="col-md-6 col-xs-12 testing-quality-option">
 						<div className="testing-quality-box yellow">
-							<img src="/images/project-specific-icon.svg" alt="testing services icon"/>
+							<img className= 'ml-6' src="/images/project-specific-icon.svg" alt="testing services icon"/>
 						</div>
 						
 						<h3>Sutable Testing approach</h3>
@@ -44,7 +45,7 @@ export default function Home() {
 					</div>
 					<div className="col-md-6 col-xs-12 testing-quality-option">
 						<div className="testing-quality-box blue">
-							<img src="/images/quality-icon3.svg" alt="testing services icon"/>
+							<img className= 'ml-7' src="/images/quality-icon3.svg" alt="testing services icon"/>
 						</div>
 						
 						<h3>Performance Testing</h3>
@@ -52,7 +53,7 @@ export default function Home() {
 					</div>
 					<div className="col-md-6 col-xs-12 testing-quality-option">
 						<div className="testing-quality-box green">
-							<img src="/images/quality-icon4.svg" alt="testing services icon"/>
+							<img className= 'ml-6' src="/images/quality-icon4.svg" alt="testing services icon"/>
 						</div>
 						
 						<h3>Error Detection</h3>
@@ -123,7 +124,7 @@ export default function Home() {
 		 <div className="row connect-section">
 				<div className="col-md-12 col-sm-12 col-xs-12"> 
 					<h2> Connect to discuss your project </h2> 
-					<a href="free-pilot-test.php" className="wow pulse"  data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">request free consultation</a>
+					<a href="/freePilotTest" className='themeBtn'>request free consultation</a>
 				</div> 
 			</div>
       

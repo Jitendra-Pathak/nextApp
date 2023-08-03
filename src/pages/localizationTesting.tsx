@@ -10,9 +10,10 @@ export default function Home() {
 			<div className="banner-header">
                     <h2 className="h1">Localization Testing</h2>
 					<div className ="breadcrumb1">
-					<a href="index.html">
+					<a href="/">
 					<img src="/images/Homeicon.png" alt="home"/></a>
-						<img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/>
+					<span style={{fontFamily:'webdings', color:'#1d2625'}}>4</span>
+						{/* <img className= "arrowIcon" src="/images/arrow.png" alt="arrow"/> */}
                         <span> Localization Testing</span>
 					</div>
 			</div>
@@ -99,7 +100,7 @@ export default function Home() {
 						<p>To help create test cases that will be executed during localization testing </p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-tick.png" alt="tick" />
+						<img src="/images/mapping.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -108,7 +109,7 @@ export default function Home() {
 						<p>Before embarking on the process of localization testing, all the documentation is reviewed</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-test-tube.png" alt="tick" />
+						<img src="/images/testing.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -117,7 +118,7 @@ export default function Home() {
 						<p>To ensure that all functions work and regional standards are met</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-edit.png" alt="tick" />
+						<img src="/images/output.png" alt="tick" />
 					</div>
 				 </li>
 				 <li>
@@ -126,7 +127,7 @@ export default function Home() {
 						<p>Analysing how a regional user uses the products and using the data to determine if any UI/locale changes are needed</p>
 					</div>
 					<div className="timeline-icon">
-						<img src="/images/tl-winner.png" alt="tick" />
+						<img src="/images/error.png" alt="tick" />
 					</div>
 				 </li>
 			 </ul>
@@ -136,7 +137,7 @@ export default function Home() {
 	<div className="row connect-section mx-0">
 		<div className="col-md-12 col-sm-12 col-xs-12"> 
 			<h2> Connect to discuss your project </h2> 
-			<a href="free-pilot-test.php">request free consultation</a>
+			<a href="/freePilotTest" className='themeBtn'>request free consultation</a>
 		</div> 
 	</div>
 </div>

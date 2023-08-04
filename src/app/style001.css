@@ -1710,6 +1710,7 @@ ul.menu-hover li a:hover {
   font-size: 16px;
   font-family: "CustomFont-Bold", Arial, sans-serif;
   color:#1f2633;
+  margin-left: -15px;
 }
 
 .functional-testing .new-cover p {

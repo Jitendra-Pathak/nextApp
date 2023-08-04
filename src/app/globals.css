@@ -233,6 +233,10 @@ body {
 }
 
 .banner{
-  height: 380px;
+  height: 410px;
+}
+
+.functional-testing .new-cover img{
+  margin-left: -25px;
 }
 
